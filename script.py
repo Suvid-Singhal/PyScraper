@@ -10,7 +10,12 @@ soup = BeautifulSoup(html_page,features="lxml")
 
 for link in soup.findAll('a', attrs={'href': re.compile("^http://")}):
 	path = urlparse(link.get('href')).path
+	links = []
 	if path == '/':
 		continue
 	else:
-		print(path)
+		if path not in links:
+			print(path)
+			links.append(path)
+		else:
+			continue
