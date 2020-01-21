@@ -10,4 +10,4 @@ To prevent the listing of the folder's contents on your server, you should add t
 Options -Indexes
 ```
 
-Also, you should not put any articl or information that is publicly visible on your website in the pages that contain your personal information or web server files. In this way, attacker can use directory listing to leak your personal information.
+Also, you should not put any article or information that is publicly visible on your website in the pages that contain your personal information or web server files. In this way, attacker can use directory listing to leak your personal information.
